@@ -1,0 +1,16 @@
+<section>
+  <div class="login-form">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <FormInput label="Email" [control]="form.controls['email']"></FormInput>
+      <FormInput
+        type="password"
+        label="Password"
+        [control]="form.controls['password']"
+      ></FormInput>
+      <button>Login</button>
+    </form>
+    <div *ngIf="errorMessage">
+      {{ errorMessage }}
+    </div>
+  </div>
+</section>

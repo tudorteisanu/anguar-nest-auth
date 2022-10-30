@@ -1,0 +1,17 @@
+<header>
+  <nav class="container">
+    <ul class="header-links">
+      <li
+        class="link"
+        *ngFor="let link of links"
+        [routerLink]="link.to"
+        routerLinkActive="link--active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        {{ link.text }}
+      </li>
+    </ul>
+    <div>{{ userName }}</div>
+    <button *ngIf="isAuthenticated" (click)="logout()">Logout</button>
+  </nav>
+</header>

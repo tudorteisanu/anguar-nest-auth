@@ -1,0 +1,19 @@
+.login-form {
+  margin: auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  background: lightgray;
+  border: none;
+  outline: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: antiquewhite ;
+}
